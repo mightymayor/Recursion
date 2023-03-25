@@ -2,10 +2,12 @@ function isPalindrome(word) {
     // Define a helper function to recursively check if a substring is a palindrome
     function isSubstringPalindrome(start, end) {
       // Base case: when start index and end index cross each other, the substring must be a palindrome
+     
       if (start >= end) {
         return true;
       }
 
+      
       // Recursive case: compare characters at both ends of the substring
       if (word[start] === word[end]) {
         return isSubstringPalindrome(start + 1, end - 1);
@@ -24,4 +26,4 @@ function isPalindrome(word) {
   }
 
   console.log(isPalindrome("radar")); // Output: true
-  console.log(isPalindrome("banana")); // Output: false
+  console.log(isPalindrome("banana")); // Output: false.
